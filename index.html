@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            height: 100%;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            border: none;
+            outline: none;
+        }
+        .head{
+            background-color: #EACDA0;
+            min-height: 50px;
+        }
+        .bottom{
+            background-color: #EACDA0;
+            min-height: 100px;
+        }
+        .body{
+            /* background-color: bisque; */
+            height: calc(100% - 150px);
+            overflow: hidden;
+        }
+        /* .body .body__list-users, .body .body__chat-room{
+            display: inline-block;
+        } */
+        .body__list-users{
+            width: 200px;
+            float: left;
+            /* border-right: 1px solid tomato; */
+            height: 100%;
+            overflow-y: auto;
+            /* display: inline-block; */
+        }
+        .body__list-users__user{
+            height: 45px;
+            border-bottom: 1px solid silver;
+        }
+        .body__list-users__user:last-child{
+            border-bottom: none;
+        }
+        .body__chat-room{
+            /* display: table-cell; */
+            overflow-y: auto;
+            /* display: inline-block; */
+            /* width: 100%; */
+            /* width: calc(100% - 250px); */
+            height: 100%;
+            /* background-color: burlywood; */
+            /* padding: 5px; */
+        }
+        .body__chat-room__message{
+            display: block;
+            /* padding: 10px 0px; */
+            height: 25px;
+            /* text-align: left; */
+            /* background-color: cadetblue; */
+            width: 100%;
+        }
+        .body__chat-room__message:before{
+            color: blue;
+            content: 'you: ';
+        }
+        .body__chat-room__message:nth-child(2n):before{
+            color: red;
+            content: 'user: ';
+            /* float: right; */
+            /* text-align: right; */
+
+            /* background-color: crimson; */
+            /* color: white; */
+        }
+    </style>
+</head>
+<body>
+    <div class="head"></div>
+    <div class="body">
+        <div class="body__list-users">
+            <div class="body__list-users__user">User #1</div>
+            <div class="body__list-users__user">User #2</div>
+            <div class="body__list-users__user">User #3</div>
+            <div class="body__list-users__user">User #4</div>
+            <div class="body__list-users__user">User #5</div>
+            <div class="body__list-users__user">User #6</div>
+            <div class="body__list-users__user">User #7</div>
+            <div class="body__list-users__user">User #8</div>
+            <div class="body__list-users__user">User #9</div>
+            <div class="body__list-users__user">User #10</div>
+            <div class="body__list-users__user">User #11</div>
+            <div class="body__list-users__user">User #12</div>
+            <div class="body__list-users__user">User #13</div>
+            <div class="body__list-users__user">User #14</div>
+            <div class="body__list-users__user">User #15</div>
+            <div class="body__list-users__user">User #16</div>
+            <div class="body__list-users__user">User #17</div>
+            <div class="body__list-users__user">User #18</div>
+            <div class="body__list-users__user">User #19</div>
+            <div class="body__list-users__user">User #20</div>
+        </div>
+        <div class="body__chat-room">
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+            <div class="body__chat-room__message">Привет!</div>
+        </div>
+    </div>
+    <div class="bottom"></div>
+</body>
+</html>
